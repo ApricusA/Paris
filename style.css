@@ -443,6 +443,7 @@ a {
     float: left;
     margin-right: 30px;
     margin-bottom: 28px;
+    position: relative;
 }
 
 .attractions-item:nth-child(2) {
@@ -457,21 +458,15 @@ a {
     margin-right: 0;
 }
 
-/* .attractions-image:first-child {
-    height: 525px;
-} */
-
 .attractions-text {
-    position: relative;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.attractions-title a {
-    position: absolute;
-    /* text-align: center; */
-    /* left: 50%;
-    bottom: 50%; */
-    /* transform: translate(0, -50%); */
-    color:red;
+.attractions-title a {    
+    color: #fff;
     letter-spacing: 1.6px;
 }
 
